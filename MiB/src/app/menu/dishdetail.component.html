@@ -1,0 +1,13 @@
+<md-card>
+	<md-card-header>
+		<md-card-title>
+			<h3>COMMENTS</h3>
+		</md-card-title>
+	</md-card-header>
+		
+	<md-card-content *ngFor="let di of dish.comments">
+		<p>{{ di.comment }}</p>
+		<p>{{ di.rating }} Stars</p>
+		<p>--{{ di.author }} {{ di.date | date}}</p>
+	</md-card-content>
+</md-card>

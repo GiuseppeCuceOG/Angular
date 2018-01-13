@@ -18,7 +18,16 @@
 			</md-grid-tile>
 		</md-grid-list>
 	</div>
-	<div fxFlex *ngIf="selectedDish">
+</div>
+<div class="container"
+    fxLayout="row"
+    fxLayout.sm="column"
+    fxLayout.xs="column"
+    fxLayoutAlign.gt-md="space-around center"
+    fxLayoutGap="10px"
+    fxLayoutGap.xs="0">
+
+	<div fxFlex="40" *ngIf="selectedDish">
 		<md-card>
 			<md-card-header>
 				<md-card-title>
@@ -36,5 +45,9 @@
 				<button md-button>SHARE</button>
 			</md-card-actions>
 		</md-card>
+	</div>
+
+	<div fxFlex="40">
+		<dish-detail></dish-detail>
 	</div>
 </div>
